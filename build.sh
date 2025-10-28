@@ -6,12 +6,14 @@ DAEMON_DIR="$SCRIPT_DIR/daemon"
 FRAMEWORK_DIR="$SCRIPT_DIR/minNavKit"
 CLI_DIR="$SCRIPT_DIR/minNavCLI"
 BUILD_DIR="$SCRIPT_DIR/build"
+LOGS_DIR="$SCRIPT_DIR/logs"
 DAEMON_OUT="$BUILD_DIR/minnavd"
 CLI_OUT="$BUILD_DIR/minnavcli"
 FRAMEWORK_NAME="minNavKit"
 
 # Create build directory
 mkdir -p "$BUILD_DIR"
+mkdir -p "$LOGS_DIR"
 
 # Compile C daemon
 echo "Compiling daemon..."
